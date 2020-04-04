@@ -1,0 +1,404 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "intone carnaatak music",
+            "modelConfiguration": {
+                "fallbackIntentSensitivity": {
+                    "level": "LOW"
+                }
+            },
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "SaraliSwarasIntent",
+                    "slots": [
+                        {
+                            "name": "sarali_swarasSlot",
+                            "type": "AMAZON.Ordinal",
+                            "samples": [
+                                "sixth",
+                                "fifth",
+                                "fourth",
+                                "third",
+                                "second",
+                                "first"
+                            ]
+                        },
+                        {
+                            "name": "sarali_swaraspeedSlot",
+                            "type": "AMAZON.Ordinal",
+                            "samples": [
+                                "third speed",
+                                "second speed",
+                                "first speed",
+                                "third",
+                                "second",
+                                "first"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "{sarali_swarasSlot} saraliswaras",
+                        "{sarali_swarasSlot} saraliswara",
+                        "{sarali_swarasSlot} sarali swara",
+                        "{sarali_swarasSlot} sarali swaras",
+                        "{sarali_swarasSlot} sarali swaras {sarali_swaraspeedSlot} speed",
+                        "{sarali_swarasSlot} sarali swara {sarali_swaraspeedSlot} speed",
+                        "Sarali swara {sarali_swarasSlot} {sarali_swaraspeedSlot} speed",
+                        "Sarali swaras {sarali_swarasSlot} and {sarali_swaraspeedSlot} speed",
+                        "Sarali Swara",
+                        "SaraliSwara",
+                        "SaraliSwaras",
+                        "Sarali Swaras"
+                    ]
+                },
+                {
+                    "name": "IndexIntent",
+                    "slots": [],
+                    "samples": [
+                        "Topics",
+                        "table of content",
+                        "TOC",
+                        "Index"
+                    ]
+                },
+                {
+                    "name": "AMAZON.ResumeIntent",
+                    "samples": [
+                        "playback",
+                        "play back",
+                        "resume",
+                        "repeat"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "DaatuSwaraIntent",
+                    "slots": [
+                        {
+                            "name": "Daatu_swaraslot",
+                            "type": "AMAZON.Ordinal",
+                            "samples": [
+                                "third daatu swara",
+                                "second daatu swara",
+                                "first daatu swara",
+                                "one",
+                                "first",
+                                "two",
+                                "second"
+                            ]
+                        },
+                        {
+                            "name": "Daatu_swaraspeedslot",
+                            "type": "AMAZON.Ordinal",
+                            "samples": [
+                                "third speed",
+                                "second speed",
+                                "first speed",
+                                "three",
+                                "two",
+                                "one",
+                                "third",
+                                "second",
+                                "first"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "{Daatu_swaraslot} daatu swara",
+                        "{Daatu_swaraslot} daatu swaras",
+                        "{Daatu_swaraslot} daatuswara",
+                        "{Daatu_swaraslot} daatuswaras",
+                        "{Daatu_swaraslot} daatuswara {Daatu_swaraspeedslot} speed",
+                        "{Daatu_swaraslot} Daatu swara {Daatu_swaraspeedslot} speed",
+                        "daatu swaras {Daatu_swaraslot} {Daatu_swaraspeedslot} speed",
+                        "daatu swara {Daatu_swaraslot} {Daatu_swaraspeedslot} speed",
+                        "daatuswara",
+                        "daatuswaras",
+                        "daatu swara",
+                        "Daatu swaras"
+                    ]
+                },
+                {
+                    "name": "JantaSwaraIntent",
+                    "slots": [
+                        {
+                            "name": "Janta_swaraslot",
+                            "type": "AMAZON.Ordinal",
+                            "samples": [
+                                "third janta swara",
+                                "second janta swara",
+                                "first janta swara",
+                                "third",
+                                "second",
+                                "first"
+                            ]
+                        },
+                        {
+                            "name": "janta_swaraspeedslot",
+                            "type": "AMAZON.Ordinal",
+                            "samples": [
+                                "third speed",
+                                "second speed",
+                                "first speed",
+                                "third",
+                                "second",
+                                "first"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "{Janta_swaraslot} janta swaras",
+                        "{Janta_swaraslot} janta swara",
+                        "{Janta_swaraslot} jantaswaras",
+                        "{Janta_swaraslot} jantaswara",
+                        "{Janta_swaraslot} Jantaswaras {janta_swaraspeedslot} speed",
+                        "{Janta_swaraslot} Janta swaras {janta_swaraspeedslot} speed",
+                        "{Janta_swaraslot} Jantaswara {janta_swaraspeedslot} speed",
+                        "{Janta_swaraslot} Janta swara {janta_swaraspeedslot} speed",
+                        "janta swaras",
+                        "jantaswaras",
+                        "jantaswara",
+                        "Janta swara"
+                    ]
+                },
+                {
+                    "name": "AlankarasIntent",
+                    "slots": [
+                        {
+                            "name": "AlankarasSlot",
+                            "type": "AMAZON.Ordinal",
+                            "samples": [
+                                "third alankara",
+                                "second alankara",
+                                "first Alankara",
+                                "third",
+                                "second",
+                                "first"
+                            ]
+                        },
+                        {
+                            "name": "AlankarasSpeed",
+                            "type": "AMAZON.Ordinal"
+                        }
+                    ],
+                    "samples": [
+                        "Alankataras",
+                        "{AlankarasSlot} Alankataras",
+                        "{AlankarasSlot} Alankatara",
+                        "{AlankarasSlot} Alankataras {AlankarasSpeed} speed",
+                        "{AlankarasSlot} Alankatara {AlankarasSpeed} speed",
+                        "Alankataras {AlankarasSlot} {AlankarasSpeed} speed",
+                        "Alankatara {AlankarasSlot}  {AlankarasSpeed} speed"
+                    ]
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "SaraliSwarasIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "sarali_swarasSlot",
+                            "type": "AMAZON.Ordinal",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.666799750897.1156049508181"
+                            }
+                        },
+                        {
+                            "name": "sarali_swaraspeedSlot",
+                            "type": "AMAZON.Ordinal",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.24849262538.1530131403542"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "DaatuSwaraIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Daatu_swaraslot",
+                            "type": "AMAZON.Ordinal",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1236244030877.1389398040275"
+                            }
+                        },
+                        {
+                            "name": "Daatu_swaraspeedslot",
+                            "type": "AMAZON.Ordinal",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.1236244030877.147281839628"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "JantaSwaraIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "Janta_swaraslot",
+                            "type": "AMAZON.Ordinal",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.730188642590.1517615177243"
+                            }
+                        },
+                        {
+                            "name": "janta_swaraspeedslot",
+                            "type": "AMAZON.Ordinal",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.730188642590.801859526654"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "AlankarasIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "AlankarasSlot",
+                            "type": "AMAZON.Ordinal",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.316915084477.142686634578"
+                            }
+                        },
+                        {
+                            "name": "AlankarasSpeed",
+                            "type": "AMAZON.Ordinal",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.316915084477.872173177705"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.666799750897.1156049508181",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which Sarali Swaras you want to listen. There are Six Sarali Swaras. You can say as first  second third etc"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.24849262538.1530131403542",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "There are three speeds.  select the speed by saying first or second or third"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1236244030877.147281839628",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "There are three speeds.  select the speed by saying first or second or third"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1236244030877.1389398040275",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "There are two daatu swaras available.  Please say first or second "
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.730188642590.1517615177243",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "There are three janta swaras.  Please select them by saying first or second or third"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.730188642590.801859526654",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "There are three speeds.  select the speed by saying first or second or third"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.316915084477.142686634578",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "There are Seven Alankaras.  Please select by saying first, second, third et cetera"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.316915084477.872173177705",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "There are three speed for each Alankara.   select the speed by saying first or second or third"
+                    }
+                ]
+            }
+        ]
+    }
+}
